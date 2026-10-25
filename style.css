@@ -1,0 +1,214 @@
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+--primary-color:aqua;
+}
+
+body{
+    /* color:white; */
+    font-family: Arial, Helvetica, sans-serif;
+    width:100%;
+    height: auto;
+}
+nav{
+    background:linear-gradient(25deg,#02b9de,#204f8c,#02b9de);
+    height:5rem;
+    width:100%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+nav .row{
+    background-color: aqua;
+    height:5px;
+    /* width:100%; */
+    animation: scroll-animation;
+    animation-timeline: scroll();
+}
+@keyframes scroll-animation{
+    from{
+        width:0%;
+    }
+    to{
+        width:100%;
+    }
+}
+nav h1{
+    /* color:white; */
+    float: left;
+    padding:1.5rem 4rem;
+    cursor: pointer;
+    animation:rakesh 2s linear 0s infinite;
+}
+@keyframes rakesh{
+    0%{ 
+        
+        text-shadow: 0 0 15px red;
+    }
+    30%{
+        text-shadow: 0 0 15px blue;
+    }
+    50%{
+        text-shadow: 0 0 15px var(--primary-color);
+    }
+    70%{
+        text-shadow: 0 0 15px chocolate;
+    }
+    100%{
+        
+        text-shadow: 0 0 15px pink;
+    }
+}
+
+nav .logo-bar{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.logo-bar ul{
+    display: flex;
+    gap:2rem;
+    padding:2rem 7rem;
+    list-style: none;
+}
+.logo-bar ul li a{
+    text-decoration: none;
+    color:white;
+}
+.logo-bar ul li a:hover{
+    color:var(--primary-color)
+}
+  
+section{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ section .box{
+    height:80vh;
+    width:90vw;
+    display: flex;
+    overflow-x:scroll;
+    padding-left:0rem;
+    scroll-behavior: smooth;
+}
+section .box::-webkit-scrollbar{
+    display: none;
+}
+.img{
+    height:90%;
+    width:100%;
+    box-shadow: 0 0 10px black;
+    margin:2rem;
+    border-radius: 1rem;
+    transition: all 0.5s;
+}
+.img:hover{
+    transform:scale(1.05);
+    box-shadow: 0 0 10px red;
+}
+.btns button{
+    padding:0.5rem 2rem;
+    margin:0.5rem;
+    background-color: blue;
+    border-radius:0.5rem;
+    color:white;
+    cursor: pointer;
+    border:none;
+    transition:all 0.4s;
+}
+.btns button:hover{
+    background-color: rgb(102, 102, 240);
+}
+/* ======================================== */
+
+ main .name{
+    height:70vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+main .name h1{
+    font-size: 5rem;
+    /* color:black; */
+    animation:xyz 2s linear 0s infinite ;
+}
+
+@keyframes xyz{
+    0%{
+        text-shadow: 0 0 15px red;
+    }
+    20%{
+        text-shadow: 0 0 15px yellowgreen;
+    }
+    50%{
+         text-shadow: 0 0 15px rgb(50, 205, 182);
+    }
+    100%{
+        text-shadow: 0 0 15px blue;
+    }
+}
+/* =============================================================== */
+    .container{
+            /* padding-top:1rem; */
+            background-color: whitesmoke;
+            height:80vh;
+            width:95%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .imagess{
+            width:95%;
+            display: flex;
+            padding: 1rem 2rem;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+        .imagess::-webkit-scrollbar{
+            display: none;
+        }
+        .imgs{
+            width: 15rem;
+            border-radius: 1rem;
+            margin:3rem;
+            box-shadow: 0 0 10px black;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            animation-name: aaa;
+            animation-duration: 20s;
+            animation-delay:0s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: forwards;     
+            /* animation-timeline: view();   */
+            transition: all 1s;
+        }
+        .imgs:hover{
+            transform:scale(1.1);
+            box-shadow: 0 0 10px goldenrod;
+        }
+
+        @keyframes aaa{
+            from{
+                
+               transform: translate(0px 100px);
+            }
+            to{
+                
+                transform: translateX(-195vw);
+            }
+            
+        
+        }
+    
+        
+/* ============================================== */
+/* we can use in animation in the like top:0;and left:0, aisa animaation me  */

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My new web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Rakesh Nirapure.</h1>
+
+        <div class="logo-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">about</a></li>
+            </ul>
+        </div>
+        <div class="row">
+        </div>
+    </nav>
+
+    <header>
+        <section>
+            <div class="box" id="slider">
+                <img class="img" src="pic 1.jpg">
+                <img class="img" src="pic 2.jpg">
+                <img class="img" src="pic 3.jpg">
+                <img class="img" src="pic 6.jpg">
+                <img class="img" src="pic 5.jpg">
+            </div>
+            <div class="btns">
+                <button onclick="left()">←Left</button>
+                <button onclick="right()">Right→</button>
+            </div>
+        </section>
+    </header>
+
+
+    <main>
+
+        <div class="name">
+            <h1>Wellcome To My Website.</h1>
+        </div>
+
+        <div class="container">
+            <h1>Trending Products</h1>
+            <div class="imagess">
+                <img class="imgs" src="https://picsum.photos/208/300">
+                <img class="imgs" src="https://picsum.photos/203/302">
+                <img class="imgs" src="https://picsum.photos/206/303">
+                <img class="imgs" src="https://picsum.photos/209/304">
+                <img class="imgs" src="https://picsum.photos/202/305">
+                <img class="imgs" src="https://picsum.photos/201/306">
+                <img class="imgs" src="https://picsum.photos/205/307">
+                <img class="imgs" src="https://picsum.photos/203/308">
+                <img class="imgs" src="https://picsum.photos/202/303">
+                <img class="imgs" src="https://picsum.photos/207/301">
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>
+    let slider = document.getElementById("slider");
+    function left() {
+        slider.scrollLeft -= 250;
+
+    }
+    function right() {
+        slider.scrollLeft += 250;
+    }
+</script>
+
+</html>
